@@ -28,7 +28,7 @@ body:hover {
     max-width: 250px; /* Increased size of the logo */
 }
 
-.img{
+.img {
     max-width: 40px; /* Set max width for the logo */
     margin-right: 10px; /* Space between logo and text */
 } 
@@ -238,16 +238,56 @@ body:hover {
 
 /* Responsive styles for mobile devices */
 @media only screen and (max-width: 600px) {
-    .modal-images img {
-        width: 80%; /* Make images larger on mobile */
+    body {
+        background-size: contain;
+    }
+
+    .top-line {
+        height: 50px; /* Decrease top-line height for mobile */
+    }
+
+    .logo {
+        max-width: 200px; /* Decrease logo size */
+    }
+
+    .img {
+        max-width: 30px; /* Smaller logo for mobile */
+    }
+
+    .title {
+        font-size: 16px; /* Smaller title font size */
+    }
+
+    .blue-box {
+        height: calc(100vh - 50px); /* Adjust height for smaller top-line */
+        left: 10px; /* Decrease side margins */
+        right: 10px;
+    }
+
+    .welcome-text {
+        font-size: 40px; /* Decrease welcome text size */
+        margin-top: 40px; /* Decrease margin on top */
+    }
+
+    .image-row a {
+        width: 120px; /* Smaller image size */
     }
 
     .modal-content {
-        width: 90%; /* Adjust modal width on mobile */
-        height: auto; /* Allow height to adjust */
+        width: 90%; /* Adjust modal width */
+        height: auto; /* Allow auto height */
+        max-height: none; /* Remove max height for mobile */
+    }
+
+    .modal-images img {
+        width: 80%; /* Make modal images larger on mobile */
     }
 
     .button-container {
-        flex-direction: column; /* Stack buttons vertically on mobile */
+        flex-direction: column; /* Stack buttons vertically */
+    }
+
+    .status-text {
+        font-size: 14px; /* Decrease status text size */
     }
 }
