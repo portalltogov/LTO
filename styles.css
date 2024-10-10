@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: url('image/01348jfland-transportation-offic-1-1676435717.jpg') no-repeat center center fixed;
+    background: url('01348jfland-transportation-offic-1-1676435717.jpg') no-repeat center center fixed;
     background-size: cover;
     transition: background-position 2s ease; /* Smooth transition */
 }
@@ -28,7 +28,7 @@ body:hover {
     max-width: 250px; /* Increased size of the logo */
 }
 
-.img {
+.img{
     max-width: 40px; /* Set max width for the logo */
     margin-right: 10px; /* Space between logo and text */
 } 
@@ -111,8 +111,8 @@ body:hover {
     background-color: white; /* White box */
     padding: 20px; /* Padding for the box */
     border-radius: 10px; /* Rounded corners */
-    width: 60%; /* Increased width of the modal */
-    height: 60%; /* Increased height of the modal */
+    width: 60%; /* Default width */
+    height: 60%; /* Default height */
     max-height: 70%; /* Max height for the modal */
     display: flex;
     flex-direction: column; /* Stack button vertically */
@@ -236,58 +236,56 @@ body:hover {
     background-color: red; /* Red color for the Close button */
 }
 
-/* Responsive styles for mobile devices */
-@media only screen and (max-width: 200px) {
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
     body {
-        background-size: contain;
+        background-size: contain; /* Adjust background for mobile */
     }
 
     .top-line {
-        height: 50px; /* Decrease top-line height for mobile */
+        height: 50px; /* Reduce top line height */
+        padding: 0 10px; /* Adjust padding */
     }
 
     .logo {
-        max-width: 200px; /* Decrease logo size */
-    }
-
-    .img {
-        max-width: 30px; /* Smaller logo for mobile */
+        max-width: 150px; /* Smaller logo for mobile */
     }
 
     .title {
-        font-size: 16px; /* Smaller title font size */
+        font-size: 16px; /* Smaller title text */
     }
 
     .blue-box {
-        height: calc(100vh - 50px); /* Adjust height for smaller top-line */
-        left: 10px; /* Decrease side margins */
+        left: 10px; /* Adjust left and right padding */
         right: 10px;
     }
 
     .welcome-text {
-        font-size: 40px; /* Decrease welcome text size */
-        margin-top: 40px; /* Decrease margin on top */
+        font-size: 40px; /* Smaller welcome text */
+        margin-top: 20px; /* Adjust margin for mobile */
     }
 
     .image-row a {
-        width: 120px; /* Smaller image size */
+        width: 100px; /* Smaller image thumbnails */
     }
 
     .modal-content {
-        width: 90%; /* Adjust modal width */
-        height: auto; /* Allow auto height */
-        max-height: none; /* Remove max height for mobile */
+        width: 90%; /* Modal wider on mobile */
+        height: auto; /* Adjust height automatically */
+        max-height: none; /* Remove max-height for mobile */
+        padding: 10px; /* Reduce padding */
     }
 
     .modal-images img {
-        width: 80%; /* Make modal images larger on mobile */
+        width: 80%; /* Adjust modal image size */
     }
 
     .button-container {
         flex-direction: column; /* Stack buttons vertically */
     }
 
-    .status-text {
-        font-size: 14px; /* Decrease status text size */
+    .button {
+        width: 100%; /* Make buttons full width */
+        margin: 5px 0; /* Add margin between buttons */
     }
 }
