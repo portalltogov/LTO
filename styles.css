@@ -235,3 +235,19 @@ body:hover {
 .close-button {
     background-color: red; /* Red color for the Close button */
 }
+
+/* Responsive styles for mobile devices */
+@media only screen and (max-width: 600px) {
+    .modal-images img {
+        width: 80%; /* Make images larger on mobile */
+    }
+
+    .modal-content {
+        width: 90%; /* Adjust modal width on mobile */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+    }
+}
