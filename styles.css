@@ -270,10 +270,17 @@ body:hover {
     }
 
     .modal-content {
-        width: 90%; /* Modal wider on mobile */
-        height: auto; /* Adjust height automatically */
-        max-height: none; /* Remove max-height for mobile */
-        padding: 10px; /* Reduce padding */
+        background-color: white; /* White box */
+        padding: 20px; /* Padding for the box */
+        border-radius: 10px; /* Rounded corners */
+        width: 60%; /* Increased width of the modal */
+        height: 60%; /* Increased height of the modal */
+        max-height: 70%; /* Max height for the modal */
+        display: flex;
+        flex-direction: column; /* Stack button vertically */
+        justify-content: flex-start; /* Align items to the start */
+        position: relative; /* Allow positioning of close button */
+        perspective: 1000px; /* Enable 3D perspective for flipping */
     }
 
     .modal-images img {
