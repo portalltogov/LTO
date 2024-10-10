@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: url('01348jfland-transportation-offic-1-1676435717.jpg') no-repeat center center fixed;
+    background: url('image/01348jfland-transportation-offic-1-1676435717.jpg') no-repeat center center fixed;
     background-size: cover;
     transition: background-position 2s ease; /* Smooth transition */
 }
@@ -175,12 +175,12 @@ body:hover {
     display: flex; /* Align images in a row */
     justify-content: center; /* Center the images */
     margin-bottom: 20px; /* Space below the images */
-    height: 100%; /* Ensure modal images take full height */
+    height: 300%; /* Ensure modal images take full height */
     align-items: center; /* Center images vertically */
 }
 
 .modal-images img {
-    width: 40%; /* Adjust width for the modal images */
+    width: 50%; /* Increased width for the modal images */
     height: auto; /* Maintain aspect ratio */
     display: none; /* Hide initially */
     position: absolute; /* Allow overlapping for flip effect */
